@@ -1,0 +1,81 @@
+The display: flex property in CSS is used to create a flexible box layout, commonly known as flexbox. It allows you to distribute space and align items within a container along a single direction, either horizontally or vertically.
+agar chand rsmakt habu yan chand itemekt habu yan chand buttonekt habu yan nusin har shtek agar btawet bena yak rez awa (( Display:flex;)) bakarbhena. 
+display:flex; how to use this or use for what? :-
+
+.container {                
+  display: flex;                //zorbay jar aw se xtwaya pekawa bakardet
+  justify-content: center; /* horizontally center items */
+  align-items: center; /* vertically center items */
+} 
+=========or========
+.nav-menu {
+  display: flex;
+  justify-content: space-between; /* distribute items evenly */ //am agar btawet dw sht layak dwrbxay aw bbaita rast away de chap 
+  align-items: center;
+}
+=========or=============
+Creating Flexible Layouts: Flexbox is especially useful when designing flexible and responsive layouts. By setting display: flex on a container element, you can easily control the positioning and sizing of its child elements.
+.container {
+  display: flex;
+}
+=============or============
+.container {
+  display: flex;
+}
+
+.column {
+  flex: 1;
+}
+=============or=============
+.container {
+  display: flex;
+  flex-wrap: wrap; /* wrap items to next line on overflow */
+}
+=======================================================================================
+Display:flex; ==> awa dadanein katek chand itemekman haya hamu bena yak riz by default dabta yak row balam agar bmanawet dispkay:flex; bakarbhenin w bbeta column awa aw propertyash anusin flex-direction: column; ==> ya3ni itemakan bena xware ,,
+justify-content: center; ==> ama itemakan dahenetawa nawarast ,,,,,, balam agadarba align-items:center; ==> amayan itemakan daheneta nawarasty nawarasty page. 
+Justify-content:space-between; ==> ama itemakan space axata bain bas agadar ba la sarata w axir space naxata bainy |_ _ _ _ _| awha la yakam ta axir space nia tanha la bainy itemakan space axat, agarish dw iteman habet bam shewaza |_           _| 
+flex-wrap: wrap; ==> amayan bo nmuna 6 iteman haya 4 dana la yak rez jegay abetawa bapei panyaka balam dwanakay de deta xware ja amayan itemakant bo rek axat nahelet bbeta scroll zor muhima amayan .
+==========================================================================================
+<a> bo link bakardet ka awat dana la zher nusinaka xoi xatak drwst abet btawe aw xata labay am xtwaya bnusa (( text-decoration:none; ))
+<li> bo amash xry rash drwst abet ay chon agar bmanawe laibain aw xtwaya bakarbhena (( list-style:none; ))
+=======================================================================================
+:nth-child() ==> The :nth-child() pseudo-class is useful when you want to apply specific styles to elements based on their position in a list or container. without needing to assign individual classes or IDs to each element. (ama ka shopping websitem drwst krd amay teda bu)
+===========================================================================================
+(::after) ama bo nmuna nusinekt haya datawet xateki la zhere bo zyad bkai yan shty tr .
+In CSS, the ::after pseudo-element is used to insert content after the content of an element. It allows you to add additional content or styling to an element without modifying its HTML markup. 
+
+.tooltip:hover::after {   //ama agar westt hover u after pekawa bet 
+  content: "This is a tooltip";
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 4px 8px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+===============or==============
+#navbar li a.active::after{
+content: "";
+width: 30%;
+height:2px;
+background #555;
+position:absolute;
+bottom: -4px;
+left: 20px;
+}
+==============================================================================
+The CSS position: sticky; property is used to create elements that "stick" to a specified position on the screen as the user scrolls. It combines characteristics of both position: relative; and position: fixed; depending on the scroll position.
+===============================================================================
+ #prodetails .single-pro-details input:focus{   
+      outline: none;
+    }
+the :focus  is used to select and style an element that has focus.
+The :focus selector is allowed on elements that accept keyboard events or other user inputs.
+For example, when you click on an input field or a link, it gains focus, and you can see the focus styles applied to it.
+بۆ نموونە کاتێک کلیک لەسەر مەیدانی چوونەژوورەوە یان بەستەرێک دەکەیت، فۆکەس بەدەست دەهێنێت، و دەتوانیت ستایلەکانی فۆکەس ببینیت کە لەسەری جێبەجێ کراون.
+=================================================================================
+display: block; An element that has the display property set to block starts on a new line and takes up the available screen width.
+توخمێک کە تایبەتمەندی پیشاندانی بۆ بلۆک دانراوە لەسەر هێڵێکی نوێ دەست پێدەکات و پانایی شاشەی بەردەست دەگرێتەوە.
+================================================================================

@@ -1,0 +1,149 @@
+what different between id and class? id la html yak jar danusret natwani ba dlli xot la har shweneki html bi tagakani dabnay balam class wania atwani ba dlli xot daineit la har shweneki html kaine westt atwani cally bkai bas id y wania.
+===================================================================
+Section: Section tag defines the section of documents such as chapters, headers, footers or any other sections.
+Example:-
+
+<section>
+  <h2>Introduction</h2>
+  <!-- Introduction content goes here -->
+</section>
+
+<section>
+  <h2>Main Content</h2>
+  <!-- Main content goes here -->
+</section>
+
+<section>
+  <h2>Footer</h2>
+  <!-- Footer content goes here -->
+</section>
+======or=======
+<section>
+  <h2>Introduction</h2>
+  <!-- Introduction content goes here -->
+</section>
+
+<section>
+  <h2>Body</h2>
+  <!-- Body content goes here -->
+</section>
+
+<section>
+  <h2>Conclusion</h2>
+  <!-- Conclusion content goes here -->
+</section>
+======or========
+<section>
+  <h2>Tab 1</h2>
+  <!-- Tab 1 content goes here -->
+</section>
+
+<section>
+  <h2>Tab 2</h2>
+  <!-- Tab 2 content goes here -->
+</section>
+
+<section>
+  <h2>Tab 3</h2>
+  <!-- Tab 3 content goes here -->
+</section>
+===================================================================================
+if you have the image and when you click the image take you to other link or make your page refresh or many other things ,  <a href="#"><img src="images.png" alt="" class="logo"></a>  ,,, be carefull if you want set the class you need put in for image .
+===================================================================================
+i want talk about <ul><li> : In HTML, the <ul> (unordered list) and <li> (list item) elements are used to create lists.
+when you use this? more using for a few item for example navigation menu you have home about contact like that example:-
+<ul>
+  <li><a href="#">Home</a></li>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Services</a></li>
+  <li><a href="#">Contact</a></li>
+</ul>
+==========or=============
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+===========================================================================================
+why we use Div ?
+The <div> element is a commonly used HTML element that is used as a container to group and style other HTML elements. it means that you can place multiple elements (such as images, headings, paragraphs, etc.) inside a <div> element. By doing so, you can treat those elements as a single unit or group. It helps to organize and manage related elements together.
+ 
+For Example we have this code we use two div why use div because we say  <div> elements are used to group the <img> and <h6> elements together. This allows you to apply styles or manipulate them as a single unit. The <div> elements with the class "fe-box" create a container for each image and heading combination.
+
+<section id="feature" class="section-p1">
+<div class="fe-box">                       
+    <img src="imgs/f1.png">
+    <h6>Free Shipping</h6>
+</div>
+<div class="fe-box">
+    <img src="imgs/f2.png">
+    <h6>Free Shipping</h6>
+</div>
+======================================================================================
+prsyarek : basha bochi bo har sectionek ID man dawa? bo bochi la axirakay footer ID man nadawa? har ba footer lagal tagakan bang dakain?
+walam: labar away section man zora dabe bo har sectionek ID y xoi habet hata tekal nabet nakret to bo hamu sectonakan har section bnuset balam agar yak section habu asaiya harwaha bo footer eh xoi yak footera qat shty awha nabet dw footer chunka footer ya3ni zherawa kawata hamisha yak danaya u id nawet akret har ba footer bangy kayawa lagal tagakan.
+=============================================================================================
+img dena tanisht yaktr? yes agadar ba ka dw img dadaney baxoi by default la tanisht yakn pewesty ba display u sht nia .
+balam bo nusin dena xwar yak dw nusin la tanisht yak nabn mabastm dw tagi nusin .
+==============================================================================
+daim agar 4 xtwa habu wak yak bun atwani hamu haman shewa copy bkai dabnayawa magar bas tagakani nawe jiawaz bet bas ba haman class w la style aw classa bang dakaiw bo har chware agarish yak dana pewesty bawa bu shteky teda jiawaztr bet atwani lakn nawe classaka naweki tr dabnay u aw nawa bang kai la shopping shop website basm krdwa ka mabastm chia la bashi footer am xtway tedaya 
+=================================================================================
+<footer class="section-p1">
+<div class="col">        <!--agadarba 4 columan haya abet har 4 y yak naw bet hata la style rekyan bxain ba yak naw -->
+    <img class="logo" src="logo.png">
+    <h4>Contact</h4>
+    <p><strong>Address: </strong> 562 Wellington Road, Street 32, San Francisco</p>
+    <p><strong>Phone: </strong> +01 2222 355/(+91) 01 2345 5467</p>
+    <p><strong>Hours: </strong> 10:00 - 18:00, Mon - Sat</p>
+    <div class="follow">
+        <h4>Follow us</h4>
+        <div>                    <!--asaiya agar ul dabnay taqim krdawa keshay nabu-->
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-pinterest-p"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+    </div>
+</div>
+<div class="col">
+    <h4>About</h4>
+    <a href="#" >About us</a>             
+    <a href="#" >Delivery Information</a>
+    <a href="#" >Privacy Policy</a>
+    <a href="#" >Terms & Conditions</a>
+    <a href="#" >contact us</a>
+</div>
+</footer>
+
+1/ hamisha footer dabne bo am jorana ka la zherawa sht anuset awja footer bo hardw divakaya ya3ni bo hamwy , bam shewaza dainuset la style , footer{} la nawishy dabe bikaina display:flex; justify-content:space between; w flex-wrap:wrap; chunka damanawet bbeta dw xtwa la tamisht yak wak row nak column .
+2/ dwatr bo divy yakam ka ba nawe classy "col" chand tageki tedaya yakam sht ka btawe aw diva chak bkai awha danuset footer .col{ } la style awja la naweda dwbara display:flex; dadaney lagal  flex-direction: column; align-items: flex-start; chunka la footer hamu bota row damanawe awjara bo har divek ba sheway column bet agar sery websiteka bkai azani w tedagay.
+3/ awja dwatr bo har tagek pewesta lagal footer bangy kayawa chunka aw sarikya w babi hamuwana bam shewaza footer h4{} , footer p{} .
+4/ awja esta lawanaya bley divekt drwst krdwaw classt bo danawa w la naw awash dw tag haya bo amat jia krdotawa lawani de ? walamakai labar away aw basha amanawet lagal awani de tekal nabet u am dw taga pekawan u tozek la xwar away de , shteki desh bzana daim tagy <li> abet div yan ul lagal bet hata zor blaw nabet wa bashtra,, jarek footer .follow {} danusin jarekish footer .follow i{} .
+5/ awja bo am bashay dwam divy dwam drwst dakain ba haman class bo haman class? bashtr waya agar chand nusinek shewakaian awha wak yak bu datwani yak class ba kar bhenet bo asankare agarish westt yakekian shteki zyatr drwst bkai awa tanha la kn classaka naweki tr dabne w ja baw nawa tazash shtakani de zyad bka la sarawash amazham pe dabu law qsaya , dwatr hanek sht haya dwbaraya pewest nakat dwbara binusetawa for example footer h4{} ama lawla styleman peda bu bas agar shteki det west bgoret abet la class nawek dabnay awja amazhay pe bday agar na tekal abn xwshkm. dwatr bo footer a {} style daday lera la naw footer hamu chand tageki <a> haya hamu wak yaka boia rek footer a {} dadaney.
+=========================================================================================
+ onclick="window.location.href='sproduct.html';"  
+am xtwaya zoor grnga ka la kwe u kay bakary dahenet!
+yakam jar la bashi html aw shwenay ka atawe lawe daidaney bo nmuna bakar det katek click lasar shtek akay bo nmuna wenayak ka clickt krd rek btbata naw basheki try website naw htmleki tr bo numna la shopping website damanawe click lasar wenay jlkaka bkain u bman bat bo page sproduct ka wenaka ba detaily zyatr pshant bdat bam shewaza.
+ <div class="pro"  onclick="window.location.href='sproduct.html';"> 
+=========================================================================================
+<section id="page-header">
+      
+        <h2>#readmore</h2>
+         <p>Read all case studies about our products!</p>
+       
+</section>
+am xtwata he shoppinga la css ba nawe xoi idyaka ka bam shewaza css pe dadain #page-header balam shteki muhim agar bmanawe pageki tr drwst bkain hamu shtakani wak am idyaya ya3ni am xtway wak amaya bas imageakay farqy haya ay chi bkain ? rek tanha classek drwst akain u la css nawe hardwkian pekawa anusin bas bochi nawe hardwkian anusin labar away hata xtwatakani he idyakash bet bo am tanha away amanawe bigorin aw dastkare akain like this:
+
+<section id="page-header" class="blog-header">   //aha nawe classman danawa pewest nakat idyaka labain chunka eishman peia tanha amanawe imagekian farqy habet awany de hamu wak xoity.
+      
+        <h2>#readmore</h2>
+         <p>Read all case studies about our products!</p>
+       
+</section>
+
+      //css bam shewaza anusin agadar ba pekawaian rabt bka hamu.
+ #page-header.blog-header{
+    background-image: url('/blogimgs/b19.jpg');
+   }
+===============================================================================================
